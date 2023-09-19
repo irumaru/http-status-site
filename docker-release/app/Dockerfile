@@ -12,6 +12,6 @@ FROM alpine:3.18
 WORKDIR /http
 COPY --from=builder /usr/src/build/main /http/main
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD [ "./main" ]

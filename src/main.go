@@ -9,7 +9,7 @@ import (
 func main() {
 	e := echo.New()
 	e.GET("/status", HttpStatus)
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":80"))
 }
 
 func HttpStatus(c echo.Context) error {
